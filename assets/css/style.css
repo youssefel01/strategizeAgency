@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+  .navegation {
+    background-color: #f5f5f5;
+    margin-right: 15%;
+    padding-right: 40px;
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navegation .logo {
+    cursor: pointer;
+  }
+  .navegation .logo img {
+    max-height: 70px;
+    width: auto;
+  }
+  .navegation .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  .navegation .mainMenu li a {
+    color: #666666;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3em;
+  }
+  .navegation .mainMenu li a:hover{
+    color: #ee2128;
+  }
+    /*Hamburger Menu*/
+  .navegation .openMenu, .navegation .closeMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+
+  /*hero*/
+ #hero {
+    text-align: left;
+  }
+  
+  .hero-content {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .hero-title {
+    margin-top: 13%;
+    margin-left: 30px;
+  }
+  .hero-title h1 {
+    color: #ee2128;
+  }
+  .hero-title h3 {
+    color: #a0a0a0;
+    margin-bottom: 20px;
+  }
+  .hero-title span {
+    color: #009688 ;
+    display: block;
+  }
+  .button {
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #009688;
+    border: 3px solid #009688;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: top 4s ease;
+  }
+  
+  .button:hover {
+    background-color: #009688;
+    color: #fff;
+    border-radius: 6px;
+  }
+
+  #hero-img {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin-right: 10px;
+    float: right;
+  }
+  
+  h1 {
+    font-size: 3em;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 2.6em;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 1.8em;
+  }
+  /*Studies and Research / free-services / paid services*/
+  #studies-and-research, #paid-services {
+    background-color: #009688;
+    padding: 50px;
+  }
+
+  #studies-and-research .SAR-title, #free-services .SAR-title, #paid-services .PS-title {
+    text-align: center;
+    color: #fff;
+  }
+
+  #studies-and-research ul, #free-services ul, #paid-services .PS-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .research-item {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px;
+    width: 40%;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .research-item img {
+    max-width: 80%;
+    height: auto;
+  }
+  .research-item .research-info {
+    padding: 20px;
+  }
+  .research-item .research-info h3 {
+    margin-top: 20px;
+  }
+
+  
+/*free-services / contact*/
+  #free-services, #contact{
+    background-color: #fff;
+    padding: 50px;
+    color: #292d2e;
+
+  }
+  #free-services .research-item .research-info h3 {
+    margin-top: 20px;
+    color: #666666;
+  }
+  .research-item .research-info .Source {
+    text-decoration: none;
+    margin-top: 20px;
+    color: #009688;
+  }
+  #free-services .research-item {
+    border: 5px solid #009688;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+    overflow: hidden;
+    transition: top 2s ease;
+  }
+  #free-services .research-item:hover {
+    border: 10px solid #666666;
+    border-radius: 20px;
+  }
+  #free-services .SAR-title {
+    color: #292d2e;
+  }
+  #free-services .research-info p{
+    margin-bottom: 20px;
+  }
+/* paid services*/
+  #paid-services .PS-container .PS-item {
+    padding: 10px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px;
+    width: 40%;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #paid-services .PS-item:hover {
+    transform: translateY(-5px);
+  }
+  #paid-services .PS-item .price {
+    font-size: 1.2em;
+    color: #a0a0a0;
+    margin-bottom: 10px;
+  }
+  #paid-services .PS-item ul {
+    text-align: left;
+    margin-bottom: 20px;
+    flex-grow:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #paid-services .PS-item ul li {
+    margin-bottom: 10px;
+  }
+  #paid-services .PS-container .PS-item ul {
+    text-align: left;
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  #paid-services .PS-container .PS-item ul li::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #009688;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  /* about-us */
+  #about-us {
+    background-color: #f5f5f5;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #about-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #about-us h2 {
+    font-size: 2.6em;
+    margin-bottom: 20px;
+    color: #009688;
+  }
+  
+  #about-us p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666666;
+  }
+  
+  /* contact form */
+  #contact {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input,select,textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input:focus, select:focus,
+  textarea:focus {
+    outline: none;
+    border: 2px solid #009688;
+  }
+  /*footer*/
+  footer {
+    background-color: #009688;
+    color: #fff;
+    padding: 30px 15px;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .footer-title{
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.6;
+  }
+  .footer-logo img {
+    max-height: 110px;
+  }
+  .footer-links {
+    text-align: center;
+  }
+  .footer-links ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .footer-links li {
+    margin-right: 20px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    background-color: #fff;
+    color: #009688;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .footer-contact {
+    text-align: right;
+  }
+  
+  .footer-contact p {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+  }
+
+  @media(max-width: 900px){
+    /*Hamburger Menu*/
+    .navegation .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #f5f5f5;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .navegation .openMenu {
+        display: block;
+    }
+    .navegation .mainMenu li a:hover {
+        background: none;
+        color: #ee2128;
+        font-size: 1.6rem;
+    }
+    /* hero */
+    .hero-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .hero-title {
+        margin-left: 0;
+        margin-top: 10%;
+        text-align: center;
+    }
+    #hero-img {
+        z-index: 0;
+        margin: 0 auto;
+      }
+    /*Studies and Research / free-services / paid services*/
+        #studies-and-research, #free-services, #paid-service {
+        text-align: center;
+      }
+      #studies-and-research .research-item, #free-services .research-item, #paid-services .PS-container .PS-item  {
+        width: 80%; 
+        margin: 30px auto; 
+      }
+      #studies-and-research ul, #free-services ul, #paid-services .PS-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      /*footer*/
+      .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center;
+      }
+    
+      .footer-links {
+        margin-top: 20px;
+      }
+    
+      .footer-contact {
+        text-align: center;
+        margin-top: 20px;
+      }
+    
+      .footer-bottom {
+        margin-top: 40px;
+      }  
+  }
