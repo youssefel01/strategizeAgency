@@ -3,17 +3,23 @@ const mainMenu = document.querySelector('.mainMenu');
 const closeMenu = document.querySelector('.closeMenu');
 const openMenu = document.querySelector('.openMenu');
 
-
+// Add an event listener to each menu item to close the menu when clicked
+const menuItems = mainMenu.querySelectorAll('li a');
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener('click', close);
+});
 
 openMenu.addEventListener('click', show);
 closeMenu.addEventListener('click', close);
 
 function show(){
+    mainMenu.classList.add('menu-open');
     mainMenu.style.display = 'flex';
     mainMenu.style.top = '0';
 }
 
 function close(){
+    mainMenu.classList.remove('menu-open'); 
     mainMenu.style.top = '-100%';
 }
 // For Receiving emails

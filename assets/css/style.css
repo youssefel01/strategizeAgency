@@ -7,15 +7,26 @@
     scroll-behavior: smooth;
 }
 
+  /* header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f5f5f5;
+      z-index: 999;
+    }
+    /* Add space between each section and the header */
+    #hero~section,
+    section {
+      padding-top: 100px;
+    }
+
   .navegation {
-    background-color: #f5f5f5;
-    margin-right: 15%;
-    padding-right: 40px;
-    padding-left: 20px;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
   }
   .navegation .logo {
     cursor: pointer;
@@ -40,7 +51,8 @@
     color: #ee2128;
   }
     /*Hamburger Menu*/
-  .navegation .openMenu, .navegation .closeMenu {
+  .navegation .openMenu, 
+  .navegation .closeMenu {
     font-size: 2rem;
     margin: 20px;
     display: none;
@@ -258,6 +270,55 @@
     color: #666666;
   }
   
+  /* Client Review */
+    #client-review {
+      background-color: #f5f5f5;
+      padding: 50px;
+      text-align: center;
+    }
+
+    #client-review .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    #client-review h2 {
+      font-size: 2.6em;
+      margin-bottom: 20px;
+      color: #009688;
+    }
+
+    #client-review .review-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    #client-review .review-content img {
+      max-width: 150px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    #client-review .review-text p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #666666;
+      margin-bottom: 20px;
+    }
+
+    #client-review .review-text strong {
+      display: block;
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    #client-review .review-text p:last-child {
+      margin-bottom: 0;
+    }
+
   /* contact form */
   #contact {
     max-width: 800px;
@@ -378,6 +439,10 @@
         background: none;
         color: #ee2128;
         font-size: 1.6rem;
+    }
+    /* Adjusting top padding when the menu is open */
+    .navegation.menu-open {
+      padding-top: 100px;
     }
     /* hero */
     .hero-content {
